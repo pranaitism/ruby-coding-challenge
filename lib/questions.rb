@@ -28,6 +28,9 @@ end
 # add all the keys and all the values together, e.g.
 # {1 => 1, 2 => 2} becomes 6
 def add_together_keys_and_values(hash)
+  sum_keys = hash.values.sum
+  sum_values = hash.keys.sum
+  sum_keys + sum_values
 end
 
 # turn an array (with an even number of elements) into a hash, by

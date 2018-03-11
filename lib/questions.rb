@@ -96,6 +96,11 @@ end
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
+  string = array.select do |word| if word[0].match?(/[aeiou]/)
+    word
+  end
+end
+"#{string.join(" ")}'"
 end
 
 

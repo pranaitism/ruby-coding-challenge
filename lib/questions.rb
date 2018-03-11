@@ -117,6 +117,7 @@ end
 # don't reverse the array, but reverse every word inside it. e.g.
 # ['dog', 'monkey'] becomes ['god', 'yeknom']
 def reverse_every_element_in_array(array)
+  array.delete_if {|x| x == false}.compact
 end
 
 # discard the first 3 elements of an array,

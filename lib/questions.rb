@@ -218,6 +218,8 @@ end
 
 # count the number of words in a file
 def word_count_a_file(file_path)
+    IO.read(file_path).split.count
+
 end
 
 
